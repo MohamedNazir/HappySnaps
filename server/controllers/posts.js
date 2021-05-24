@@ -4,6 +4,7 @@ export const getPosts = async (req, res, next) => {
   console.log("Received GET request");
   try {
     const postsMessages = await postMessage.find();
+    console.log("dummy");
     console.log(postsMessages);
     res.status(200).json(postsMessages);
   } catch (error) {
